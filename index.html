@@ -1,0 +1,731 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shipman & Crim | DUI Defense & Criminal Attorneys Nashville TN</title>
+
+    <meta name="description" content="Contact Shipman & Crim, Criminal Attorneys in Nashville, TN for legal guidance involving DUI Defense, Bonnaroo Citations, and Auto Accident matters. Call 615-829-8259.">
+
+    <meta name="keywords" content="DUI Defense, Bonnaroo Citations, Auto Accident, Experienced Attorneys, Criminal Attorneys Nashville TN">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222222;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: #ffffff;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+            border-bottom: 4px solid #1676d2;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .logo img {
+            width: 190px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .hero {
+            margin-top: 95px;
+            padding: 85px 20px;
+            text-align: center;
+            color: #ffffff;
+            background: linear-gradient(120deg, #123c69, #1676d2, #20a4a9);
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: 0 auto 25px;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ffcc33;
+            color: #172b4d;
+            padding: 13px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 8px;
+        }
+
+        .button:hover {
+            background: #ffffff;
+            color: #0000EE;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 22px;
+        }
+
+        .section-title {
+            color: #123c69;
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            background: #f0f7ff;
+        }
+
+        .intro p {
+            max-width: 900px;
+            margin: 12px auto;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 28px;
+            border-radius: 10px;
+            border-top: 5px solid #1676d2;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+        }
+
+        .service-card:nth-child(2) {
+            border-top-color: #ff9933;
+        }
+
+        .service-card:nth-child(3) {
+            border-top-color: #20a4a9;
+        }
+
+        .service-card:nth-child(4) {
+            border-top-color: #815ac0;
+        }
+
+        .service-card h3 {
+            color: #123c69;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .service-card p {
+            margin-bottom: 12px;
+        }
+
+        .service-card ul {
+            padding-left: 22px;
+            margin-top: 12px;
+        }
+
+        .highlight {
+            background: #fff5e6;
+            border-left: 6px solid #ff9933;
+        }
+
+        .highlight h2 {
+            color: #123c69;
+            margin-bottom: 15px;
+        }
+
+        .why-section {
+            background: #eaf8f7;
+        }
+
+        .why-section ul {
+            max-width: 850px;
+            margin: 20px auto;
+            padding-left: 25px;
+        }
+
+        .why-section li {
+            margin-bottom: 10px;
+        }
+
+        .contact-section {
+            background: #123c69;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #ffffff;
+        }
+
+        .contact-details {
+            margin: 25px auto;
+            font-size: 17px;
+        }
+
+        .contact-details p {
+            margin: 10px 0;
+        }
+
+        .map-container iframe,
+        .blogger-container iframe {
+            width: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        .map-container iframe {
+            height: 400px;
+        }
+
+        .blogger-container iframe {
+            height: 600px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 25px 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            background: #ffffff;
+            color: #0000EE;
+            padding: 10px 18px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .blogger-section {
+            background: #f5f7fb;
+        }
+
+        .blogger-section p {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            background: #101f35;
+            color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 7px 0;
+        }
+
+        footer a {
+            color: #8dc5ff;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                justify-content: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .hero {
+                margin-top: 135px;
+                padding: 60px 18px;
+            }
+
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 25px;
+            }
+
+            .container {
+                padding: 40px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+
+        <div class="logo">
+            <a href="https://nashvilleattorneynow.com/">
+                <img
+                    src="https://nashvilleattorneynow.com/wp-content/uploads/2021/10/logo-100.png"
+                    alt="Shipman and Crim Criminal Attorneys Nashville">
+            </a>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why-us">Why Choose Us</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Shipman & Crim, Criminal Attorneys</h1>
+
+        <p>
+            Professional Legal Guidance for DUI Defense, Bonnaroo Citations,
+            and Auto Accident Matters in Nashville, Tennessee.
+        </p>
+
+        <a class="button" href="tel:6158298259">Call 615-829-8259</a>
+
+        <a class="button" href="https://nashvilleattorneynow.com/">
+            Visit Our Website
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="intro container" id="about">
+
+        <h2 class="section-title">About Shipman & Crim</h2>
+
+        <p>
+            When you face a criminal charge or deal with the consequences
+            of an accident, you need clear information and professional
+            legal guidance. Shipman & Crim, Criminal Attorneys, helps
+            individuals understand their legal concerns and explore
+            possible options.
+        </p>
+
+        <p>
+            Located in downtown Nashville, TN, our firm focuses on legal
+            matters involving DUI Defense, Bonnaroo Citations, and
+            Auto Accident cases.
+        </p>
+
+        <p>
+            Every legal situation has its own facts and challenges.
+            We encourage you to discuss your circumstances with an
+            attorney so you can better understand your rights,
+            responsibilities, and potential next steps.
+        </p>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="container" id="services">
+
+        <h2 class="section-title">Our Legal Services</h2>
+
+        <p style="text-align:center; max-width:850px; margin:auto;">
+            Legal challenges can affect your freedom, driving privileges,
+            finances, and future. Explore our key service areas and contact
+            our team to discuss your particular legal needs.
+        </p>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <h3>DUI Defense</h3>
+
+                <p>
+                    A DUI charge can create concerns about your driver's
+                    license, employment, finances, and personal life.
+                    Understanding the allegations and your legal options
+                    matters.
+                </p>
+
+                <ul>
+                    <li>Traffic stops and arrest circumstances</li>
+                    <li>Breath and blood testing issues</li>
+                    <li>Field sobriety test concerns</li>
+                    <li>License suspension questions</li>
+                    <li>Court dates and potential penalties</li>
+                </ul>
+
+                <p>
+                    Contact Shipman & Crim to discuss your DUI Defense
+                    concerns in Nashville.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Bonnaroo Citations</h3>
+
+                <p>
+                    A citation during Bonnaroo or another festival-related
+                    event can create unexpected legal concerns. Do not
+                    overlook paperwork or important court deadlines.
+                </p>
+
+                <ul>
+                    <li>Understanding citations and charges</li>
+                    <li>Reviewing court dates and deadlines</li>
+                    <li>Learning about potential consequences</li>
+                    <li>Discussing available response options</li>
+                </ul>
+
+                <p>
+                    Speak with our team about your Bonnaroo Citations
+                    and related legal concerns.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Auto Accident Legal Assistance</h3>
+
+                <p>
+                    An Auto Accident may lead to medical expenses,
+                    vehicle damage, missed work, and insurance questions.
+                    You deserve to understand your legal options.
+                </p>
+
+                <ul>
+                    <li>Car and passenger vehicle accidents</li>
+                    <li>Injury-related expenses</li>
+                    <li>Medical records and treatment documents</li>
+                    <li>Lost wages and financial losses</li>
+                    <li>Insurance claims and communications</li>
+                </ul>
+
+                <p>
+                    Contact our office to discuss your accident and
+                    potential personal injury claim.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Experienced Attorneys</h3>
+
+                <p>
+                    Choosing legal representation requires careful
+                    consideration. You need clear communication and
+                    guidance that addresses the facts of your situation.
+                </p>
+
+                <ul>
+                    <li>Attention to your legal concerns</li>
+                    <li>Clear explanations of legal procedures</li>
+                    <li>Discussion of possible next steps</li>
+                    <li>Professional legal guidance</li>
+                </ul>
+
+                <p>
+                    Contact Shipman & Crim to learn whether our legal
+                    services fit your needs.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section">
+        <div class="container" id="why-us">
+
+            <h2 class="section-title">Why Contact Shipman & Crim?</h2>
+
+            <p>
+                Choosing an attorney is an important decision.
+                You want a legal team that listens to your concerns,
+                explains the process, and helps you understand your options.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Personal Attention:</strong>
+                    Discuss the details and concerns surrounding your case.
+                </li>
+
+                <li>
+                    <strong>Clear Communication:</strong>
+                    Ask questions and get straightforward explanations.
+                </li>
+
+                <li>
+                    <strong>Case-Focused Guidance:</strong>
+                    Understand the facts and issues that may affect your matter.
+                </li>
+
+                <li>
+                    <strong>Practical Direction:</strong>
+                    Learn about possible options and important deadlines.
+                </li>
+
+                <li>
+                    <strong>Professional Representation:</strong>
+                    Discuss your legal needs with an attorney.
+                </li>
+            </ul>
+
+            <p>
+                If you are searching for Experienced Attorneys in Nashville,
+                TN, contact Shipman & Crim to discuss your circumstances.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="container" id="location">
+
+        <h2 class="section-title">Visit Our Nashville, TN Office</h2>
+
+        <p>
+            Shipman & Crim, Criminal Attorneys, is located in downtown
+            Nashville. Our office provides a convenient point of contact
+            for individuals seeking legal guidance in Nashville and
+            surrounding Middle Tennessee communities.
+        </p>
+
+        <p>
+            <strong>Business Name:</strong>
+            Shipman & Crim, Criminal Attorneys
+        </p>
+
+        <p>
+            <strong>Address:</strong>
+            511 Union St #1100, Nashville, TN 37219
+        </p>
+
+        <p>
+            Call ahead to discuss your legal matter and confirm arrangements
+            before visiting our office.
+        </p>
+
+        <div class="map-container">
+            <iframe
+                src="https://maps.google.com/maps?q=511%20Union%20St%20%231100%2C%20Nashville%2C%20TN%2037219&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Map showing Shipman and Crim office in Nashville Tennessee">
+            </iframe>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container" id="contact">
+
+            <h2 class="section-title">Contact Shipman & Crim Today</h2>
+
+            <p>
+                Do you have questions about DUI Defense, Bonnaroo Citations,
+                or an Auto Accident matter? Contact our firm to discuss
+                your situation and understand your possible next steps.
+            </p>
+
+            <div class="contact-details">
+
+                <p>
+                    <strong>Business:</strong>
+                    Shipman & Crim, Criminal Attorneys
+                </p>
+
+                <p>
+                    <strong>Address:</strong>
+                    511 Union St #1100, Nashville, TN 37219
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:6158298259">615-829-8259</a>
+                </p>
+
+                <p>
+                    <strong>Website:</strong>
+                    <a href="https://nashvilleattorneynow.com/">
+                        nashvilleattorneynow.com
+                    </a>
+                </p>
+
+            </div>
+
+            <a class="button" href="tel:6158298259">
+                Call Our Office
+            </a>
+
+            <a class="button" href="https://nashvilleattorneynow.com/">
+                Visit Website
+            </a>
+
+            <h3 style="margin-top:35px;">Connect With Us Online</h3>
+
+            <div class="social-links">
+
+                <a href="https://www.facebook.com/nashvilleattorneys"
+                   target="_blank" rel="noopener noreferrer">
+                    Facebook
+                </a>
+
+                <a href="https://x.com/attorneynashvll"
+                   target="_blank" rel="noopener noreferrer">
+                    X / Twitter
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Blogger Cloud Stack -->
+    <section class="blogger-section">
+        <div class="container">
+
+            <h2 class="section-title">Legal Information & Updates</h2>
+
+            <p>
+                Explore additional legal information and content from
+                Shipman & Crim through our Blogger page.
+            </p>
+
+            <div class="blogger-container">
+
+                <iframe
+                    src="https://criminalattorneys12.blogspot.com/p/home.html"
+                    width="100%"
+                    height="600"
+                    frameborder="0"
+                    loading="lazy"
+                    title="Shipman and Crim Blogger content">
+                </iframe>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="highlight">
+        <div class="container" style="text-align:center;">
+
+            <h2>Take the Next Step Toward Legal Guidance</h2>
+
+            <p>
+                A legal challenge can raise important questions about
+                your rights, responsibilities, and future. Start by
+                speaking with Shipman & Crim about your circumstances.
+            </p>
+
+            <p style="margin-top:18px;">
+                Are you ready to discuss your legal needs with
+                Shipman & Crim, Criminal Attorneys, and understand
+                your next steps?
+            </p>
+
+            <a class="button" href="tel:6158298259">
+                Call 615-829-8259
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        <strong>Shipman & Crim, Criminal Attorneys</strong>
+    </p>
+
+    <p>511 Union St #1100, Nashville, TN 37219</p>
+
+    <p>
+        Phone:
+        <a href="tel:6158298259">615-829-8259</a>
+    </p>
+
+    <p>
+        <a href="https://nashvilleattorneynow.com/">
+            Official Website
+        </a>
+    </p>
+
+    <p>
+        &copy; <span id="year"></span>
+        Shipman & Crim, Criminal Attorneys. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
+
+</body>
+</html>
+```
